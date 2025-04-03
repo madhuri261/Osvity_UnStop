@@ -36,7 +36,7 @@ const FeaturedOpportunityCard = ({ title, image, text }) => {
       </div>
 
       {/* Arrow Icon */}
-      <div className="absolute top-[335px] right-[-6px] w-[65px] h-[65px] flex justify-center items-center border border-[#164A98] rounded-full hover:bg-[#164A98] transition duration-300">
+      <div className="absolute top-[335px] right-[70px] w-[65px] h-[65px] flex justify-center items-center border border-[#164A98] rounded-full hover:bg-[#164A98] transition duration-300">
       <ArrowForwardIosIcon style={{ fontSize: "38px" }} className="text-[#164A98] hover:text-white" />
 
       </div>

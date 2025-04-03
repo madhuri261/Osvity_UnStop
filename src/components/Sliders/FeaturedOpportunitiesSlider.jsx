@@ -15,16 +15,24 @@ import Slider from "react-slick";
 import FeaturedOpportunityCard from "../Cards/FeaturedOpportunityCard";
 
 const opportunities = [
-  { title: "Coding Ninja's 2025", image: OpportunityImg5, text: "Mindeniousss" },
-  { title: "Code Nova for Kids", image: Codenova, text: "Mindeniousss" },
-  { title: "Medical coding jobs", image: Medicalcoding, text: "Mindeniousss" },
+  { title: "Coding Ninja's 2025", image: OpportunityImg5, author: "Mindeniousss" },
+  { title: "Code Nova for Kids", image: Codenova, author: "Mindeniousss" },
+  { title: "Medical coding jobs", image: Medicalcoding, author: "Mindeniousss" },
+  { title: "Flipkart Runway S6", image: flipkartrunwayimg, author: "Mindeniousss" },
+  { title: "Sales Internship", image: salesimg, author: "Mindeniousss" },
+  { title: "Smart India Hackathon", image: smartIndiaImg, author: "Online" },
+  { title: "Sales Internship", image: salesInternshipImg, author: "Mindeniousss" },
+  { title: "TCS Code Vita 2025", image: TcsCodeVitaImg, author: "Online" },
+  { title: "Coders Hackathon", image: codersHackathonImg, author: "Online" },
 ];
+
+
 
 const FeaturedOpportunitiesSlider = () => {
 
   const settings = {
     infinite: true,
-    speed: 5005000,
+    speed: 500,
     slidesToShow: 3, 
     slidesToScroll: 3,
     autoplay: true,
@@ -45,8 +53,8 @@ const FeaturedOpportunitiesSlider = () => {
       {
         breakpoint: 820, // iPad Air Specific
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 2, 
+          slidesToScroll: 2, // Add slidesToScroll here if needed
         },
       },
       {
@@ -58,6 +66,7 @@ const FeaturedOpportunitiesSlider = () => {
       },
     ],
   };
+  
 
 
   return (
